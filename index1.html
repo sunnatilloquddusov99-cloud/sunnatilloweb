@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sunnatillo quddusov · Frontend developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
     <!-- <script src='https://cdn.jotfor.ms/agent/embedjs/019bfef6dd1e7f89821bbded7eff9198f31d/embed.js'></script> -->
 
 
@@ -115,9 +116,7 @@
             align-items: center;
             padding: 1.25rem 5%;
             background: color-mix(in srgb, var(--bg) 80%, transparent);
-            backdrop-filter: blur(16px);
             border-bottom: 1px solid var(--border);
-            transition: background var(--transition);
         }
 
         .nav-logo {
@@ -537,7 +536,7 @@
             color: var(--accent);
             font-size: 0.85rem;
             letter-spacing: 0.05em;
-            border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+            /* border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); */
             padding-bottom: 2px;
             transition: all var(--transition);
         }
@@ -597,7 +596,7 @@
         }
 
         .project-card:hover {
-            border-color: color-mix(in srgb, var(--accent) 60%, transparent);
+            /* border-color: color-mix(in srgb, var(--accent) 60%, transparent); */
             transform: translateY(-4px);
             box-shadow: 0 16px 48px color-mix(in srgb, var(--accent) 8%, transparent);
         }
@@ -672,7 +671,7 @@
             border-radius: 4px;
             background: color-mix(in srgb, var(--accent2) 10%, transparent);
             color: var(--accent2);
-            border: 1px solid color-mix(in srgb, var(--accent2) 25%, transparent);
+            /* border: 1px solid color-mix(in srgb, var(--accent2) 25%, transparent); */
         }
 
         .project-links {
@@ -823,7 +822,7 @@
             font-weight: 800;
             margin-bottom: 1.25rem;
             background: linear-gradient(to right, var(--text), var(--muted));
-            -webkit-background-clip: text;
+            /* -webkit-background-clip: text; */
             -webkit-text-fill-color: transparent;
         }
 
@@ -968,7 +967,7 @@
 
         @media (max-width: 768px) {
 
-                        .dumaloq {
+            .dumaloq {
                 display: none;
             }
 
@@ -1002,27 +1001,15 @@
 
 
 
-         @media (max-width: 1442px) {
+        @media (max-width: 1442px) {
 
-                        .dumaloq {
+            .dumaloq {
                 display: none;
             }
 
         }
 
 
-
-
-
-
-
-        .immgg {
-            width: 600px;
-            position: absolute;
-            margin-left: 780px;
-            margin-top: -50px;
-            /* filter: drop-shadow(2px 2px 15px green); */
-        }
 
         .dumaloq {
             width: 510px;
@@ -1034,6 +1021,16 @@
             box-shadow: 2px 2px 20px #1a9900;
             animation: ani linear 1.1s infinite alternate;
         }
+
+
+
+                .dumaloq {
+position: absolute;
+        }
+
+
+
+
 
 
 
@@ -1085,6 +1082,16 @@
     border-radius: 58%;
 }
 } */
+
+
+.icon1{
+    font-size: 130px;
+    z-index: 99;
+    color: white;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: 170px;
+}
     </style>
 </head>
 
@@ -1109,9 +1116,7 @@
         <a href="#projects" class="mobile-link">Projects</a>
         <a href="#experience" class="mobile-link">Experience</a>
         <a href="#contact" class="mobile-link">Contact</a>
-        <button id="theme-toggle-mobile"
-            style="background:var(--surface); border:1px solid var(--border); color:var(--text); padding:0.8rem 1.5rem; border-radius:8px; margin-top:1rem;">☀️
-            Light Mode</button>
+        <button id="theme-toggle-mobile" style="background:var(--surface); border:1px solid var(--border); color:var(--text); padding:0.8rem 1.5rem; border-radius:8px; margin-top:1rem;">☀️Light Mode</button>
     </div>
 
     <section id="hero">
@@ -1122,7 +1127,8 @@
         </div>
 
         <!-- <img src="download (6).png" alt="" class="immgg"> -->
-        <div class="dumaloq"><img src="download (6).png" alt="" class="duimg"></div>
+      
+        <div class="dumaloq">  <i class="icon1 fa-solid fa-code"></i> </div>
 
         <div class="hero-content">
             <div class="hero-tag">Available for opportunities</div>
@@ -1254,11 +1260,11 @@
 
         const PROJECTS = [
             { title: 'AkademPro', desc: 'You can learn programming quickly and easily on this platform, where you can learn by watching various games and videos with professional instructors..', tags: ["not yet uploaded to the internet"], c1: '#1a1a4e', c2: '#0055ff', live: '#', github: '#' },
-            
+
             { title: 'MultikTime', desc: 'You can watch cartoons and movies through this platform..', tags: ["not yet uploaded to the internet"], c1: '#0a2e1a', c2: '#00bb44', live: '#', github: '#' },
-            
+
             { title: 'AI sound translater', desc: 'converts voice to text and text to voice.', tags: ['not yet uploaded to the internet'], c1: '#2a0a3a', c2: '#aa00ff', live: '#', github: '#' },
-            
+
             // { title: 'ThermoGrid', desc: 'IoT dashboard for monitoring smart devices.', tags: ['Vue.js', 'MQTT'], c1: '#2a1400', c2: '#ff6600', live: '#', github: '#' }
         ];
 
@@ -1346,6 +1352,7 @@
                 document.body.style.overflow = 'http://127.0.0.1:5000/send-message';
             });
         });
+
 
 
     </script>
